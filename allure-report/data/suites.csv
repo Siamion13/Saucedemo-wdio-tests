@@ -1,3 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","174","should add all items to cart and show correct cart count","","Wed Jul 30 10:40:24 EEST 2025","passed","Wed Jul 30 10:40:25 EEST 2025","","Add all items to cart and then remove them","",""
-"","140","should remove all items from cart and show correct cart count","","Wed Jul 30 10:40:25 EEST 2025","passed","Wed Jul 30 10:40:25 EEST 2025","","Add all items to cart and then remove them","",""
