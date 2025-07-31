@@ -40,6 +40,21 @@ class InventoryPage {
         return await this.cartIconBadge.isDisplayed();
 
     }
+
+    async getAllDisplayedItems() {
+        const items = await this.inventoryItems;
+        const results = [];
+
+        for (const item of items) {
+            const name = await item.$('.inventory_item_name').getText();
+            const description = await item.$('.inventory_item_desc').getText();
+            const price = await item.$('.inventory_item_price').getText();
+
+            results.push({ name, description, price });
+        }
+
+        return results;
+    }
 }
 
 module.exports = new InventoryPage();

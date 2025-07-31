@@ -1,7 +1,7 @@
 const LoginPage = require('../pageobjects/login_page');
 const InventoryPage = require('../pageobjects/inventory_page');
 
-describe('Add all items to cart and then remove them', () => {
+describe('Login, Add all items to cart and then remove them', () => {
   before(async () => {
     await LoginPage.open();
     await LoginPage.login('standard_user', 'secret_sauce');
