@@ -11,10 +11,23 @@ class LoginPage {
         return $('#login-button');
     }
 
+    get errorToast () {
+        return $('h3[data-test="error"]');
+    }
+
     async login (username, password) {
         await this.inputUsername.setValue(username);
         await this.inputPassword.setValue(password);
         await this.btnSubmit.click();
+    }
+
+    async getErrorMessage () {
+        return await this.errorToast.getText()
+    }
+
+    async isErrorVisible() {
+        return await this.errorToast.isDisplayed();
+
     }
 
     open () {
