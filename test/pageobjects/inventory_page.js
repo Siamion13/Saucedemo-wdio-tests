@@ -15,6 +15,18 @@ class InventoryPage {
         return $('.shopping_cart_badge');
     }
 
+    get sortingDropdown() {
+        return $('.product_sort_container');
+    }
+
+    get itemPrices() {
+        return $$('.inventory_item_price');
+    }
+
+    async sortBy(value) {
+        await this.sortingDropdown.selectByVisibleText(value);
+    }
+
     async addAllItemsToCart() {
         const buttons = await this.addToCartButtons;
         for (let i = 0; i < buttons.length; i++) {
@@ -51,6 +63,19 @@ class InventoryPage {
             const price = await item.$('.inventory_item_price').getText();
 
             results.push({ name, description, price });
+        }
+
+        return results;
+    }
+
+    async getAllDisplayedPrices() {
+        const prices = await this.itemPrices;
+        const results = [];
+
+        for (const price of prices) {
+            const text = await price.getText();
+            const value = parseFloat(text.replace('$', ''));
+            results.push(value);
         }
 
         return results;
