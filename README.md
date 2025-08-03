@@ -1,6 +1,6 @@
 # Saucedemo WebdriverIO Tests
 
-This is a Selenium automation project for testing the SwagLabs web application. The goal of this project is to demonstrate automated testing skills using Selenium WebDriver, including test case creation, execution, and reporting.
+This is a WebdriverIO automation project for testing the SauceDemo web application. The goal of this project is to demonstrate automated testing skills using WebdriverIO, Mocha, and Allure, including test case creation, execution, and reporting.
 
 
 ## Technologies Used
