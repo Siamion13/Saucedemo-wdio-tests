@@ -2,7 +2,7 @@ const LoginPage = require('../pageobjects/login_page');
 const InventoryPage = require('../pageobjects/inventory_page');
 const allure = require('@wdio/allure-reporter')
 
-describe('Login, Add all items to cart and then remove them', () => {
+describe('Login, add all items to cart and then remove them', () => {
   before(async () => {
     allure.startStep('Open login page');
     await LoginPage.open();
