@@ -9,8 +9,8 @@ This is a WebdriverIO automation project for testing the SauceDemo web applicati
 - **WebdriverIO** – Web automation framework
 - **Mocha** – Test framework
 - **Chai** – Assertion library
-- **Dotenv** – Environment variable management
 - **Allure** – Test reporting
+- **Node.js** – Runtime environment
 
 ## Features
 - Login Scenarios
